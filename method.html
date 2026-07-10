@@ -15,7 +15,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-head"><div class="wrap">
   <a class="wordmark" href="index.html">The Lal Portfolio, <span>Verified</span></a>
-  <nav class="main" aria-label="Site"><a href="index.html">Story</a><a href="portfolio.html">Portfolio</a><a href="sold.html">The Sold 17</a><a href="map.html">Map</a><a href="entities.html">Entities</a><a href="method.html" aria-current="page">Method</a><a href="gaps.html">Gaps &amp; Next Steps</a></nav>
+  <nav class="main" aria-label="Site"><a href="index.html">Story</a><a href="dashboard.html">Dashboard</a><a href="portfolio.html">Portfolio</a><a href="sold.html">The Sold 17</a><a href="map.html">Map</a><a href="entities.html">Entities</a><a href="method.html" aria-current="page">Method</a><a href="gaps.html">Gaps &amp; Next Steps</a></nav>
 </div></header>
 <main id="main">
 <div class="wrap narrow">
@@ -28,17 +28,17 @@
   <h2>Source hierarchy</h2>
   <p>When sources conflict, the higher one wins:</p>
   <ol>
-    <li><strong>County assessment &amp; Recorder of Deeds records</strong> — ownership, value, deeds, sales</li>
-    <li><strong>PA Department of State / PENN File</strong> — entity existence, status, officers</li>
-    <li><strong>County Tax Claim system</strong> — real-estate tax delinquency</li>
-    <li><strong>Redfin / Zillow</strong> — market value and rent <em>estimates only</em>, never ownership</li>
-    <li><strong>The 2018 list and blogs</strong> — leads only, never evidence</li>
+    <li><strong>County assessment &amp; Recorder of Deeds records:</strong> ownership, value, deeds, sales</li>
+    <li><strong>PA Department of State / PENN File:</strong> entity existence, status, officers</li>
+    <li><strong>County Tax Claim system:</strong> real-estate tax delinquency</li>
+    <li><strong>Redfin / Zillow:</strong> market value and rent <em>estimates only</em>, never ownership</li>
+    <li><strong>The 2018 list and blogs:</strong> leads only, never evidence</li>
   </ol>
 
   <h2>Evidence discipline</h2>
   <dl class="qa">
     <dt>Every fact has a receipt</dt>
-    <dd>268 captured artifacts — screenshots, CSV exports, PDFs — each tied to the specific fact it
+    <dd>268 captured artifacts (screenshots, CSV exports, PDFs), each tied to the specific fact it
     supports and its source URL, indexed in the evidence register. Any number on this site can be traced to its capture.</dd>
     <dt>Methods were validated with positive controls</dt>
     <dd>A “no delinquency found” answer is only meaningful if the search works. Before recording a single
@@ -46,7 +46,7 @@
     ($16,340.64 due) to prove the system returns hits when hits exist. Ambiguous screens were re-run, never recorded.</dd>
     <dt>Unfindable stays unfindable</dt>
     <dd>Eleven of the 99 listed addresses match no parcel in any county database. They are carried as
-    <span class="stamp flag">Unverified</span> — with the searches that failed documented on each dossier —
+    <span class="stamp flag">Unverified</span>, with the failed searches documented on each dossier,
     rather than force-matched to a plausible parcel.</dd>
     <dt>Names were matched cautiously</dt>
     <dd>County spellings are inconsistent (AMRIT/ARMIT, RST/RSP, NAGPAUL/MAGPAUL/NAGPAUI). One-letter variants
@@ -57,45 +57,45 @@
     <dt>How research statuses map to this site</dt>
     <dd>The internal register classifies each 2018-list row as Confirmed Lal, Not Lal, or Uncertain. Here those
     render as <span class="stamp ok">Verified family-held</span>, <span class="stamp mute">Sold / third party</span>,
-    and <span class="stamp flag">Unverified</span> — the “Uncertain” rows are exactly the eleven addresses with
+    and <span class="stamp flag">Unverified</span>; the “Uncertain” rows are exactly the eleven addresses with
     no verifiable county record.</dd>
     <dt>The work is monitored, not frozen</dt>
     <dd>The county parcel layer is re-pulled weekly and diffed; any title change on any of the 127 tracked
     parcels is flagged automatically. Findings carry their as-of date (2026-07-07).</dd>
   </dl>
 
-  <h2>The court record — and why no tenant is named here</h2>
+  <h2>The court record, and why no tenant is named here</h2>
   <p>The PA court portal yielded 170 dockets involving the family names and entities:
-  157 landlord–tenant filings spanning 2011–2026 (the remaining
+  157 landlord-tenant filings spanning 2011-2026 (the remaining
   13 are civil-collection and municipal code-enforcement matters
   involving the same names, surfaced by the same sweep), with
   $751,637 in judgments for the family as plaintiff and stated rents from
   $500 to $3,000 per month (average about $942).
-  A possession order in the most recent case was served 2026-07-06. In 2025–26, municipal
-  code-enforcement waves appear — about 36 rental-license citations in Valley Township
+  A possession order in the most recent case was served 2026-07-06. In 2025 and 2026, municipal
+  code-enforcement waves appear: about 36 rental-license citations in Valley Township
   alone, plus Coatesville citations including a guilty verdict against “Maple Ventures”.</p>
   <p>Two hard limits shape what this can tell you. First, <strong>public dockets identify tenants by name and
-  town but hide unit addresses</strong> — so they prove an active rental operation without revealing which specific
+  town but hide unit addresses</strong>, so they prove an active rental operation without revealing which specific
   houses are rented. Second, tenants named in eviction cases are private individuals in a difficult moment;
   this site deliberately publishes <strong>aggregates only, never tenant names</strong>.</p>
 
-  <h2>What the estimates are — and aren't</h2>
+  <h2>What the estimates are, and what they are not</h2>
   <p>Redfin and Zillow model estimates cover 58 of the 110 family parcels, totaling ≈$14,745,776;
   51 of those 58 also carry a rent model, totaling ≈$103,829/mo. They are statistical models, not
   appraisals; they skip most vacant land and many non-MLS addresses entirely. County assessed values cover all
-  110 but reflect assessment ratios, not market prices — for the 58 parcels where both figures exist, market
+  110 but reflect assessment ratios, not market prices. For the 58 parcels where both figures exist, market
   estimates run about 4.2× assessed. No such comparison exists for the other 52 parcels, so no “whole-portfolio
   market value” is stated anywhere on this site. A professional valuation would start from these numbers, not end at them.</p>
 
   <h2>Reproducibility</h2>
-  <p>The full pipeline — county API pulls, tax lookups, entity checks, deed exports, court sweeps, weekly
-  reconciliation — is scripted and versioned in a private repository with the complete evidence index. This site
+  <p>The full pipeline (county API pulls, tax lookups, entity checks, deed exports, court sweeps, weekly
+  reconciliation) is scripted and versioned in a private repository with the complete evidence index. This site
   is a faithful rendering of that file, minus private-individual details excluded by design.</p>
 </div></main>
 <footer class="footnote"><div class="wrap">
-<p><strong>About this site.</strong> Every fact here comes from a public government record — county assessment
-and deed data, the PA Department of State, county Tax Claim lookups, and the PA court portal — captured with
-a saved evidence artifact (268 entries). Market values and rents are model estimates, not appraisals.
+<p><strong>About this site.</strong> Every fact here comes from a public government record: county assessment
+and deed data, the PA Department of State, county Tax Claim lookups, and the PA court portal, each captured
+as a saved evidence artifact (268 entries). Market values and rents are model estimates, not appraisals.
 Data as of 2026-07-07; ownership is re-verified against the county weekly. Where a fact could not be verified
 it is marked <span class="stamp flag">Unverified</span> rather than guessed.</p>
 <p><strong>Privacy.</strong> Court information appears only as aggregates: no tenant is named anywhere on this site, by design.
