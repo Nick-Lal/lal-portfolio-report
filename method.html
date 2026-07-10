@@ -15,7 +15,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-head"><div class="wrap">
   <a class="wordmark" href="index.html">The Lal Portfolio, <span>Verified</span></a>
-  <nav class="main" aria-label="Site"><a href="index.html">Story</a><a href="dashboard.html">Dashboard</a><a href="portfolio.html">Portfolio</a><a href="sold.html">The Sold 17</a><a href="map.html">Map</a><a href="entities.html">Entities</a><a href="method.html" aria-current="page">Method</a><a href="gaps.html">Gaps &amp; Next Steps</a></nav>
+  <nav class="main" aria-label="Site"><a href="index.html">Story</a><a href="dashboard.html">Dashboard</a><a href="portfolio.html">Portfolio</a><a href="sold.html">The Sold 17</a><a href="map.html">Map</a><a href="entities.html">Entities</a><a href="method.html" aria-current="page">Method</a><a href="evidence.html">Evidence</a><a href="gaps.html">Gaps &amp; Next Steps</a></nav>
 </div></header>
 <main id="main">
 <div class="wrap narrow">
@@ -87,6 +87,26 @@
   estimates run about 4.2× assessed. No such comparison exists for the other 52 parcels, so no “whole-portfolio
   market value” is stated anywhere on this site. A professional valuation would start from these numbers, not end at them.</p>
 
+  <h2 id="derived">Derived estimates and field checks for the unpriced 52</h2>
+  <p>Fifty-two family parcels have no Redfin or Zillow model estimate. Rather than leave them blank,
+  each carries a clearly labeled <strong>derived range</strong> built from two cited anchors:</p>
+  <ol>
+    <li><strong>Low anchor:</strong> assessed value × 3.27, Pennsylvania's official Common Level Ratio
+    factor for Chester County (<a href="https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/taxtypes/rtt/documents/clr_factor_current.pdf"
+    target="_blank" rel="noopener">PA Dept. of Revenue, 2025 factors ↗</a>, applicable July 2026 to June 2027).
+    The state uses this exact multiplier to convert assessed values to market value for transfer-tax purposes.
+    Within this portfolio it is genuinely conservative: it sits at the 17th percentile of the ratios observed
+    on the 58 parcels where both figures exist.</li>
+    <li><strong>Mid anchor:</strong> assessed value × 4.26, the median market-to-assessed ratio of those same
+    58 verified pairs. Applied only where a structure is confirmed on the parcel, by county land-use class or
+    by a July 2026 aerial-imagery check; vacant land gets the low anchor only, because ratios derived from
+    houses say little about a lot.</li>
+  </ol>
+  <p>Each unpriced parcel also got a field pass in July 2026: aerial imagery (Esri World Imagery) classified
+  as structure or vacant land, and a web search for listings, ads, or news. Where a real listing or model
+  price surfaced, the dossier cites it directly and it overrides the derived figures. These ranges are rough
+  anchors for family discussion, not appraisals, and they never mix into the site's headline totals, which
+  count only county assessed values and true model estimates.</p>
   <h2>Reproducibility</h2>
   <p>The full pipeline (county API pulls, tax lookups, entity checks, deed exports, court sweeps, weekly
   reconciliation) is scripted and versioned in a private repository with the complete evidence index. This site
